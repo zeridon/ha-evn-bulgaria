@@ -1,0 +1,15 @@
+{
+  "domain": "evn",
+  "name": "EVN Bulgaria (Regulated Prices)",
+  "codeowners": ["@zeridon"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://www.evn.bg/Home/Electricity.aspx",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/zeridon/hacs-evn-bulgaria",
+  "requirements": [
+	  "beautifulsoup4==4.14.2"
+  ],
+  "version": "1.0.0"
+}

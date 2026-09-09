@@ -1,0 +1,11 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "EVN Bulgaria",
+        "description": "Add EVN Bulgaria electricity prices."
+      }
+    }
+  }
+}
+
