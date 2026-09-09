@@ -152,8 +152,7 @@ def parse_prices(html: str) -> tuple[float, float]:
 
         # EVN publishes the electricity-only price followed by
         # the final price including network services.
-        final_price = prices[-2] if len(prices) >= 2 else prices[-1]
-
+        final_price = prices[-2] if len(prices) >= 2 else prices[-1]  # noqa: PLR2004
 
         if "Дневна" in text and day_price is None:
             day_price = final_price
@@ -201,7 +200,7 @@ def find_price_near_label(text: str, label: str) -> float | None:
     if not prices:
         return None
 
-    return prices[-2] if len(prices) >= 2 else prices[-1]
+    return prices[-2] if len(prices) >= 2 else prices[-1]  # noqa: PLR2004
 
 
 def validate_prices(day_price: float, night_price: float) -> None:

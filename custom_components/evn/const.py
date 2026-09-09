@@ -9,9 +9,7 @@ DOMAIN = "evn"
 
 NAME = "EVN Bulgaria (Regulated Prices)"
 
-SOURCE_URL = (
-    "https://www.evn.bg/Home/Electricity.aspx"
-)
+SOURCE_URL = "https://www.evn.bg/Home/Electricity.aspx"
 CONF_SOURCE_URL = "source_url"
 
 UPDATE_INTERVAL = timedelta(hours=24)
