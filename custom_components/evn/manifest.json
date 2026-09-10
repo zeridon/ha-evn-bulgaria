@@ -7,7 +7,7 @@
   "documentation": "https://www.evn.bg/Home/Electricity.aspx",
   "integration_type": "service",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/zeridon/hacs-evn-bulgaria",
+  "issue_tracker": "https://github.com/zeridon/ha-evn-bulgaria",
   "requirements": [
 	  "beautifulsoup4==4.14.2"
   ],
