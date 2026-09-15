@@ -218,7 +218,7 @@ class EVNCurrentPriceSensor(EVNBaseSensor):
 class EVNCurrentPriceVatSensor(EVNBaseSensor):
     """Current price including VAT."""
 
-    _attr_unique_id = "evn_current_price_incl_vat"
+    _attr_translation_key = "current_price_incl_vat"
     _attr_unique_id = "electrohold_current_price_incl_vat"
     _attr_icon = "mdi:flash-outline"
 
