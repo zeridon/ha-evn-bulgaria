@@ -97,7 +97,7 @@ class EVNBaseSensor(
 class EVNDayPriceSensor(EVNBaseSensor):
     """Day price excluding VAT."""
 
-    _attr_name = "Day Price"
+    _attr_translation_key = "day_price"
     _attr_unique_id = "evn_day_price"
     _attr_icon = "mdi:weather-sunny"
 
@@ -110,7 +110,7 @@ class EVNDayPriceSensor(EVNBaseSensor):
 class EVNDayPriceVatSensor(EVNBaseSensor):
     """Day price including VAT."""
 
-    _attr_name = "Day Price incl VAT"
+    _attr_translation_key = "day_price_incl_vat"
     _attr_unique_id = "evn_day_price_incl_vat"
     _attr_icon = "mdi:weather-sunny"
 
@@ -123,7 +123,7 @@ class EVNDayPriceVatSensor(EVNBaseSensor):
 class EVNNightPriceSensor(EVNBaseSensor):
     """Night price excluding VAT."""
 
-    _attr_name = "Night Price"
+    _attr_translation_key = "night_price"
     _attr_unique_id = "evn_night_price"
     _attr_icon = "mdi:weather-night"
 
@@ -136,7 +136,7 @@ class EVNNightPriceSensor(EVNBaseSensor):
 class EVNNightPriceVatSensor(EVNBaseSensor):
     """Night price including VAT."""
 
-    _attr_name = "Night Price incl VAT"
+    _attr_translation_key = "night_price_incl_vat"
     _attr_unique_id = "evn_night_price_incl_vat"
     _attr_icon = "mdi:weather-night"
 
@@ -149,7 +149,7 @@ class EVNNightPriceVatSensor(EVNBaseSensor):
 class EVNCurrentTariffSensor(EVNBaseSensor):
     """Current tariff."""
 
-    _attr_name = "Current Tariff"
+    _attr_translation_key = "current_tariff"
     _attr_unique_id = "evn_current_tariff"
     _attr_native_unit_of_measurement = None
     _attr_state_class = None
@@ -183,7 +183,7 @@ class EVNCurrentTariffSensor(EVNBaseSensor):
 class EVNCurrentPriceSensor(EVNBaseSensor):
     """Current price excluding VAT."""
 
-    _attr_name = "Current Price"
+    _attr_translation_key = "current_price"
     _attr_unique_id = "evn_current_price"
     _attr_icon = "mdi:flash"
 
@@ -218,8 +218,8 @@ class EVNCurrentPriceSensor(EVNBaseSensor):
 class EVNCurrentPriceVatSensor(EVNBaseSensor):
     """Current price including VAT."""
 
-    _attr_name = "Current Price incl VAT"
     _attr_unique_id = "evn_current_price_incl_vat"
+    _attr_unique_id = "electrohold_current_price_incl_vat"
     _attr_icon = "mdi:flash-outline"
 
     async def async_added_to_hass(self) -> None:
