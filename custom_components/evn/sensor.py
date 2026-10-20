@@ -93,6 +93,10 @@ class EVNBaseSensor(
             ATTR_VAT_RATE: self.coordinator.vat_rate,
         }
 
+    @property
+    def available(self) -> bool:
+        return self.coordinator.data is not None
+
 
 class EVNDayPriceSensor(EVNBaseSensor):
     """Day price excluding VAT."""
@@ -219,7 +223,7 @@ class EVNCurrentPriceVatSensor(EVNBaseSensor):
     """Current price including VAT."""
 
     _attr_translation_key = "current_price_incl_vat"
-    _attr_unique_id = "electrohold_current_price_incl_vat"
+    _attr_unique_id = "evn_current_price_incl_vat"
     _attr_icon = "mdi:flash-outline"
 
     async def async_added_to_hass(self) -> None:
