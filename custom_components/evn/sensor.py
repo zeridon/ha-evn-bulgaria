@@ -95,6 +95,7 @@ class EVNBaseSensor(
 
     @property
     def available(self) -> bool:
+        """Set availability"""
         return self.coordinator.data is not None
 
 
